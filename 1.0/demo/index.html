@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>demo标题</title>
+    <style>
+        h3, p {margin: 0; padding: 0;}
+        h3 {padding: 20px 0 10px;font: 16px/1.5 "微软雅黑";}
+        p.text {font: 12px/1.5 '宋体';text-indent: 2em;line-height: 20px;color: #999;}
+        p.text a {text-decoration: none;color: #39f;}
+    </style>
+    <script src="http://a.tbcdn.cn/s/kissy/1.3.0/kissy-min.js" charset="utf-8"></script>
+</head>
+<body>
+    <h3>较强的视觉设计</h3>
+    <p class="text">
+    前端技术包括<a href="#" class="J_PowerTips" tips="JavaScript是一种能让你的网页更加生动活泼的程式语言，也是目前网页中设计中最容易学又最方便的语言。" target="_blank">JavaScript</a>、<a href="#" class="J_PowerTips" tips="ActionScript 动作脚本是遵循 ECMAscript第四版 的 Adobe Flash Player 运行时环境的编程语言。" target="_blank">ActionScript</a>、<a href="#" class="J_PowerTips" tips="级联样式表（Cascading Style Sheet）简称“CSS”，通常又称为“风格样式表（Style Sheet）”，它是用来进行网页风格设计的。" target="_blank">CSS</a>、<a href="#" class="J_PowerTips" tips="可扩展超文本置标语言（eXtensible HyperText Markup Language，XHTML），是一种置标语言，表现方式与超文本置标语言（HTML）类似，不过语法上更加严格。" target="_blank">xHTML</a>等“传统”技术与<a href="#" class="J_PowerTips" tips="AIR是针对网络与桌面应用的结合所开发出来的技术，可以不必经由浏览器而对网络上的云端程式做控制。" target="_blank">Adobe AIR</a>、<a href="#" class="J_PowerTips" tips="Google Gears会将数据储存在你的硬盘上的一个SQLite数据库里，并且这些数据可以通过SQL命令获得。" target="_blank">Google Gears</a>,以及概念性较强的交互式设计,艺术性较强的视觉设计等等。根据该词可以做这样的理解,用互联网来做比喻,凡是通过浏览器到用户端计算机的统称为前端技术.相反存贮于服务器端的统称为后端技术。
+    </p>
+    <h3>Web前端开发的职责是什么</h3>
+    <p class="text">
+    既然Web前端开发有很多的职位，那么不同的职位其各自的职责又是怎样的呢？我们以“<a href="#" class="J_PowerTips" tips="前端开发工程师是Web前端开发工程师的简称，是近五年才真正开始受到重视的一个新兴职业。" target="_blank">前端开发工程师</a>”、“<a href="#" class="J_PowerTips" tips="" target="_blank">资深前端开发工程师</a>”和“<a href="#" class="J_PowerTips" tips="" target="_blank">前端架构师</a>”这三种职位为例，来分析一下其各自的职责。前端开发工程师（或者说“网页制作”、“网页制作工程师”、“前端制作工程师”、“<a href="#" class="J_PowerTips" tips="网站重构工程师" target="_blank">网站重构工程师</a>”），这样的一个职位的主要职责是与交互设计师、 视觉设计师协作，根据设计图用HTML和CSS完成页面制作。同时，在此基础之上，对完成的页面进行维护和对网站前端性能做相应的优化。另外，一名合格的前端开发工程师，应该具有一定的审美能力和基础的美工操作能力，能很好的与交互及视觉协作。
+    </p>
+
+<script>
+    var S = KISSY;
+    S.Config.debug = true;
+    if (S.Config.debug) {
+        var srcPath = "../../../";
+        S.config({
+            packages:[
+                {
+                    name:"gallery",
+                    path:srcPath,
+                    charset:"utf-8",
+                    ignorePackageNameInUri:true
+                }
+            ]
+        });
+    }
+
+    S.use('gallery/powerTips/1.0/index,gallery/powerTips/1.0/index.css', function (S, PowerTips) {
+         var powerTips = new PowerTips({
+            triggers: ".J_PowerTips", //添加标签提示的钩子，支持kissy选择器
+            location: ["bottom", "right"], //标签出现在触发器上的位置，http://img04.taobaocdn.com/tps/i4/T1ARxoFmJgXXX71nES-550-400.png
+            textAttr: "tips", //标签显示数据的来源属性名称，默认为title
+            theme: "blue", //标签主题，包括""(default)、"red"、"blue"、"orange"、"purple"五种皮肤
+            spacing: 5 //标签显示位置与触发器之间的间隔，单位px
+         });
+    })
+</script>
+</body>
+</html>

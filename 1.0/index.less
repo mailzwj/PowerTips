@@ -1,0 +1,1393 @@
+@borderColor : #ccc;
+@bgColor : #fff;
+@fontColor : #333;
+
+@redborderColor : red;
+@redbgColor : #fff;
+@redfontColor : #333;
+
+@redborderColor : red;
+@redbgColor : #fff;
+@redfontColor : #333;
+
+@purpleborderColor : purple;
+@purplebgColor : #fff;
+@purplefontColor : #333;
+
+@orangeborderColor : orange;
+@orangebgColor : #fff;
+@orangefontColor : #333;
+
+@blueborderColor : blue;
+@bluebgColor : #fff;
+@bluefontColor : #333;
+
+/*默认皮肤样式 开始*/
+.ks-PowerTips_overlay {
+	display: none;
+	position: absolute;
+	z-index: 10000;
+	padding: 9px;
+	font: 12px/1.5 tahoma, '\5fae\8f6f\96c5\9ed1', sans-serif;
+	overflow: hidden;
+}
+
+.ks-PowerTips_overlay .ks-arrow {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	z-index: 9;
+	margin-top: -5px;
+	width: 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+	border-left: 0 solid @borderColor;
+	border-right: 10px solid @borderColor;
+	border-top: 5px dashed transparent;
+	border-bottom: 5px dashed transparent;
+}
+
+.ks-PowerTips_overlay .ks-arrow:after {
+	position: absolute;
+	left: 3px;
+	top: 50%;
+	z-index: 10;
+	margin-top: -3px;
+	content: "";
+	width: 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+	border-left: 0 solid @bgColor;
+	border-right: 7px solid @bgColor;
+	border-top: 3px dashed transparent;
+	border-bottom: 3px dashed transparent;
+}
+
+.ks-PowerTips_overlay .ks-ptleftmiddle {
+	left: auto;
+	right: 0;
+	border-right: 0;
+	border-left-width: 10px;
+}
+
+.ks-PowerTips_overlay .ks-ptleftmiddle:after {
+	left: auto;
+	right: 3px;
+	border-right: 0;
+	border-left-width: 7px;
+}
+
+.ks-PowerTips_overlay .ks-ptrighttop {
+	left: 0;
+	top: auto;
+	bottom: 18px;
+	border-left: 5px dashed transparent;
+	border-right: 5px solid @borderColor;
+	border-top: 4px dashed transparent;
+	border-bottom: 4px solid @borderColor;
+}
+
+.ks-PowerTips_overlay .ks-ptrighttop:after {
+	left: 0px;
+	top: 50%;
+	margin-top: -2px;
+	border-left: 3px dashed transparent;
+	border-right: 3px solid @bgColor;
+	border-top: 2px dashed transparent;
+	border-bottom: 2px solid @bgColor;
+}
+
+.ks-PowerTips_overlay .ks-ptrightbottom {
+	left: 0;
+	top: 24px;
+	border-left: 5px dashed transparent;
+	border-right: 5px solid @borderColor;
+	border-bottom: 4px dashed transparent;
+	border-top: 4px solid @borderColor;
+}
+
+.ks-PowerTips_overlay .ks-ptrightbottom:after {
+	left: 0;
+	top: 50%;
+	margin-top: -2px;
+	border-left: 3px dashed transparent;
+	border-right: 3px solid @bgColor;
+	border-bottom: 2px dashed transparent;
+	border-top: 2px solid @bgColor;
+}
+
+.ks-PowerTips_overlay .ks-ptleftbottom {
+	left: auto;
+	right: 0;
+	top: 24px;
+	border-right: 5px dashed transparent;
+	border-left: 5px solid @borderColor;
+	border-bottom: 4px dashed transparent;
+	border-top: 4px solid @borderColor;
+}
+
+.ks-PowerTips_overlay .ks-ptleftbottom:after {
+	left: auto;
+	right: 0;
+	top: 50%;
+	margin-top: -2px;
+	border-right: 3px dashed transparent;
+	border-left: 3px solid @bgColor;
+	border-bottom: 2px dashed transparent;
+	border-top: 2px solid @bgColor;
+}
+
+.ks-PowerTips_overlay .ks-ptlefttop {
+	left: auto;
+	right: 0;
+	top: auto;
+	bottom: 18px;
+	border-right: 5px dashed transparent;
+	border-left: 5px solid @borderColor;
+	border-top: 4px dashed transparent;
+	border-bottom: 4px solid @borderColor;
+}
+
+.ks-PowerTips_overlay .ks-ptlefttop:after {
+	left: auto;
+	right: 0;
+	top: 50%;
+	margin-top: -2px;
+	border-right: 3px dashed transparent;
+	border-left: 3px solid @bgColor;
+	border-top: 2px dashed transparent;
+	border-bottom: 2px solid @bgColor;
+}
+
+.ks-PowerTips_overlay .ks-pttopleft {
+	left: auto;
+	right: 18px;
+	top: auto;
+	bottom: 0;
+	border-left: 4px dashed transparent;
+	border-right: 4px solid @borderColor;
+	border-bottom: 5px dashed transparent;
+	border-top: 5px solid @borderColor;
+}
+
+.ks-PowerTips_overlay .ks-pttopleft:after {
+	left: 50%;
+	top: -2px;
+	margin-left: -1px;
+	border-left: 2px dashed transparent;
+	border-right: 2px solid @bgColor;
+	border-bottom: 3px dashed transparent;
+	border-top: 4px solid @bgColor;
+}
+
+.ks-PowerTips_overlay .ks-pttopcenter {
+	left: 50%;
+	top: auto;
+	bottom: 0;
+	margin-left: -5px;
+	border-left: 5px dashed transparent;
+	border-right: 5px dashed transparent;
+	border-bottom: 0;
+	border-top: 10px solid @borderColor;
+}
+
+.ks-PowerTips_overlay .ks-pttopcenter:after {
+	left: 50%;
+	top: -7px;
+	margin-left: -3px;
+	border-left: 3px dashed transparent;
+	border-right: 3px dashed transparent;
+	border-bottom: 0;
+	border-top: 7px solid @bgColor;
+}
+
+.ks-PowerTips_overlay .ks-pttopright {
+	left: 18px;
+	top: auto;
+	bottom: 0;
+	border-right: 4px dashed transparent;
+	border-left: 4px solid @borderColor;
+	border-bottom: 5px dashed transparent;
+	border-top: 5px solid @borderColor;
+}
+
+.ks-PowerTips_overlay .ks-pttopright:after {
+	left: 50%;
+	top: -2px;
+	margin-left: -3px;
+	border-right: 2px dashed transparent;
+	border-left: 2px solid @bgColor;
+	border-bottom: 3px dashed transparent;
+	border-top: 4px solid @bgColor;
+}
+
+.ks-PowerTips_overlay .ks-ptbottomleft {
+	left: auto;
+	right: 18px;
+	top: 5px;
+	border-left: 4px dashed transparent;
+	border-right: 4px solid @borderColor;
+	border-top: 5px dashed transparent;
+	border-bottom: 5px solid @borderColor;
+}
+
+.ks-PowerTips_overlay .ks-ptbottomleft:after {
+	left: 50%;
+	top: 1px;
+	margin-left: -1px;
+	border-left: 2px dashed transparent;
+	border-right: 2px solid @bgColor;
+	border-top: 3px dashed transparent;
+	border-bottom: 4px solid @bgColor;
+}
+
+.ks-PowerTips_overlay .ks-ptbottomcenter {
+	left: 50%;
+	top: 5px;
+	margin-left: -5px;
+	border-left: 5px dashed transparent;
+	border-right: 5px dashed transparent;
+	border-top: 0;
+	border-bottom: 10px solid @borderColor;
+}
+
+.ks-PowerTips_overlay .ks-ptbottomcenter:after {
+	left: 50%;
+	top: 6px;
+	margin-left: -3px;
+	border-left: 3px dashed transparent;
+	border-right: 3px dashed transparent;
+	border-top: 0;
+	border-bottom: 7px solid @bgColor;
+}
+
+.ks-PowerTips_overlay .ks-ptbottomright {
+	left: 18px;
+	top: 5px;
+	border-right: 4px dashed transparent;
+	border-left: 4px solid @borderColor;
+	border-top: 5px dashed transparent;
+	border-bottom: 5px solid @borderColor;
+}
+
+.ks-PowerTips_overlay .ks-ptbottomright:after {
+	left: 50%;
+	top: 1px;
+	margin-left: -3px;
+	border-right: 2px dashed transparent;
+	border-left: 2px solid @bgColor;
+	border-top: 3px dashed transparent;
+	border-bottom: 4px solid @bgColor;
+}
+
+.ks-PowerTips_overlay .ks-ptcontent {
+	display: block;
+	padding: 5px;
+	word-wrap: normal;
+	word-break: break-all;
+	width: 200px;
+	line-height: 1.5;
+	border: 1px solid @borderColor;
+	border-radius: 4px;
+	background-color: @bgColor;
+	color: @fontColor;
+}
+/*默认皮肤样式 结束*/
+
+/*红色皮肤样式 开始*/
+.ks-PowerTips_red {
+	display: none;
+	position: absolute;
+	z-index: 10000;
+	padding: 9px;
+	font: 12px/1.5 tahoma, '\5fae\8f6f\96c5\9ed1', sans-serif;
+	overflow: hidden;
+}
+
+.ks-PowerTips_red .ks-arrow {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	z-index: 9;
+	margin-top: -5px;
+	width: 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+	border-left: 0 solid @redborderColor;
+	border-right: 10px solid @redborderColor;
+	border-top: 5px dashed transparent;
+	border-bottom: 5px dashed transparent;
+}
+
+.ks-PowerTips_red .ks-arrow:after {
+	position: absolute;
+	left: 3px;
+	top: 50%;
+	z-index: 10;
+	margin-top: -3px;
+	content: "";
+	width: 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+	border-left: 0 solid @redbgColor;
+	border-right: 7px solid @redbgColor;
+	border-top: 3px dashed transparent;
+	border-bottom: 3px dashed transparent;
+}
+
+.ks-PowerTips_red .ks-ptleftmiddle {
+	left: auto;
+	right: 0;
+	border-right: 0;
+	border-left-width: 10px;
+}
+
+.ks-PowerTips_red .ks-ptleftmiddle:after {
+	left: auto;
+	right: 3px;
+	border-right: 0;
+	border-left-width: 7px;
+}
+
+.ks-PowerTips_red .ks-ptrighttop {
+	left: 0;
+	top: auto;
+	bottom: 18px;
+	border-left: 5px dashed transparent;
+	border-right: 5px solid @redborderColor;
+	border-top: 4px dashed transparent;
+	border-bottom: 4px solid @redborderColor;
+}
+
+.ks-PowerTips_red .ks-ptrighttop:after {
+	left: 0px;
+	top: 50%;
+	margin-top: -2px;
+	border-left: 3px dashed transparent;
+	border-right: 3px solid @redbgColor;
+	border-top: 2px dashed transparent;
+	border-bottom: 2px solid @redbgColor;
+}
+
+.ks-PowerTips_red .ks-ptrightbottom {
+	left: 0;
+	top: 24px;
+	border-left: 5px dashed transparent;
+	border-right: 5px solid @redborderColor;
+	border-bottom: 4px dashed transparent;
+	border-top: 4px solid @redborderColor;
+}
+
+.ks-PowerTips_red .ks-ptrightbottom:after {
+	left: 0;
+	top: 50%;
+	margin-top: -2px;
+	border-left: 3px dashed transparent;
+	border-right: 3px solid @redbgColor;
+	border-bottom: 2px dashed transparent;
+	border-top: 2px solid @redbgColor;
+}
+
+.ks-PowerTips_red .ks-ptleftbottom {
+	left: auto;
+	right: 0;
+	top: 24px;
+	border-right: 5px dashed transparent;
+	border-left: 5px solid @redborderColor;
+	border-bottom: 4px dashed transparent;
+	border-top: 4px solid @redborderColor;
+}
+
+.ks-PowerTips_red .ks-ptleftbottom:after {
+	left: auto;
+	right: 0;
+	top: 50%;
+	margin-top: -2px;
+	border-right: 3px dashed transparent;
+	border-left: 3px solid @redbgColor;
+	border-bottom: 2px dashed transparent;
+	border-top: 2px solid @redbgColor;
+}
+
+.ks-PowerTips_red .ks-ptlefttop {
+	left: auto;
+	right: 0;
+	top: auto;
+	bottom: 18px;
+	border-right: 5px dashed transparent;
+	border-left: 5px solid @redborderColor;
+	border-top: 4px dashed transparent;
+	border-bottom: 4px solid @redborderColor;
+}
+
+.ks-PowerTips_red .ks-ptlefttop:after {
+	left: auto;
+	right: 0;
+	top: 50%;
+	margin-top: -2px;
+	border-right: 3px dashed transparent;
+	border-left: 3px solid @redbgColor;
+	border-top: 2px dashed transparent;
+	border-bottom: 2px solid @redbgColor;
+}
+
+.ks-PowerTips_red .ks-pttopleft {
+	left: auto;
+	right: 18px;
+	top: auto;
+	bottom: 0;
+	border-left: 4px dashed transparent;
+	border-right: 4px solid @redborderColor;
+	border-bottom: 5px dashed transparent;
+	border-top: 5px solid @redborderColor;
+}
+
+.ks-PowerTips_red .ks-pttopleft:after {
+	left: 50%;
+	top: -2px;
+	margin-left: -1px;
+	border-left: 2px dashed transparent;
+	border-right: 2px solid @redbgColor;
+	border-bottom: 3px dashed transparent;
+	border-top: 4px solid @redbgColor;
+}
+
+.ks-PowerTips_red .ks-pttopcenter {
+	left: 50%;
+	top: auto;
+	bottom: 0;
+	margin-left: -5px;
+	border-left: 5px dashed transparent;
+	border-right: 5px dashed transparent;
+	border-bottom: 0;
+	border-top: 10px solid @redborderColor;
+}
+
+.ks-PowerTips_red .ks-pttopcenter:after {
+	left: 50%;
+	top: -7px;
+	margin-left: -3px;
+	border-left: 3px dashed transparent;
+	border-right: 3px dashed transparent;
+	border-bottom: 0;
+	border-top: 7px solid @redbgColor;
+}
+
+.ks-PowerTips_red .ks-pttopright {
+	left: 18px;
+	top: auto;
+	bottom: 0;
+	border-right: 4px dashed transparent;
+	border-left: 4px solid @redborderColor;
+	border-bottom: 5px dashed transparent;
+	border-top: 5px solid @redborderColor;
+}
+
+.ks-PowerTips_red .ks-pttopright:after {
+	left: 50%;
+	top: -2px;
+	margin-left: -3px;
+	border-right: 2px dashed transparent;
+	border-left: 2px solid @redbgColor;
+	border-bottom: 3px dashed transparent;
+	border-top: 4px solid @redbgColor;
+}
+
+.ks-PowerTips_red .ks-ptbottomleft {
+	left: auto;
+	right: 18px;
+	top: 5px;
+	border-left: 4px dashed transparent;
+	border-right: 4px solid @redborderColor;
+	border-top: 5px dashed transparent;
+	border-bottom: 5px solid @redborderColor;
+}
+
+.ks-PowerTips_red .ks-ptbottomleft:after {
+	left: 50%;
+	top: 1px;
+	margin-left: -1px;
+	border-left: 2px dashed transparent;
+	border-right: 2px solid @redbgColor;
+	border-top: 3px dashed transparent;
+	border-bottom: 4px solid @redbgColor;
+}
+
+.ks-PowerTips_red .ks-ptbottomcenter {
+	left: 50%;
+	top: 5px;
+	margin-left: -5px;
+	border-left: 5px dashed transparent;
+	border-right: 5px dashed transparent;
+	border-top: 0;
+	border-bottom: 10px solid @redborderColor;
+}
+
+.ks-PowerTips_red .ks-ptbottomcenter:after {
+	left: 50%;
+	top: 6px;
+	margin-left: -3px;
+	border-left: 3px dashed transparent;
+	border-right: 3px dashed transparent;
+	border-top: 0;
+	border-bottom: 7px solid @redbgColor;
+}
+
+.ks-PowerTips_red .ks-ptbottomright {
+	left: 18px;
+	top: 5px;
+	border-right: 4px dashed transparent;
+	border-left: 4px solid @redborderColor;
+	border-top: 5px dashed transparent;
+	border-bottom: 5px solid @redborderColor;
+}
+
+.ks-PowerTips_red .ks-ptbottomright:after {
+	left: 50%;
+	top: 1px;
+	margin-left: -3px;
+	border-right: 2px dashed transparent;
+	border-left: 2px solid @redbgColor;
+	border-top: 3px dashed transparent;
+	border-bottom: 4px solid @redbgColor;
+}
+
+.ks-PowerTips_red .ks-ptcontent {
+	display: block;
+	padding: 5px;
+	word-wrap: normal;
+	word-break: break-all;
+	width: 200px;
+	line-height: 1.5;
+	border: 1px solid @redborderColor;
+	border-radius: 4px;
+	background-color: @redbgColor;
+	color: @redfontColor;
+}
+/*红色皮肤样式 结束*/
+
+/*紫色皮肤样式 开始*/
+.ks-PowerTips_purple {
+	display: none;
+	position: absolute;
+	z-index: 10000;
+	padding: 9px;
+	font: 12px/1.5 tahoma, '\5fae\8f6f\96c5\9ed1', sans-serif;
+	overflow: hidden;
+}
+
+.ks-PowerTips_purple .ks-arrow {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	z-index: 9;
+	margin-top: -5px;
+	width: 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+	border-left: 0 solid @purpleborderColor;
+	border-right: 10px solid @purpleborderColor;
+	border-top: 5px dashed transparent;
+	border-bottom: 5px dashed transparent;
+}
+
+.ks-PowerTips_purple .ks-arrow:after {
+	position: absolute;
+	left: 3px;
+	top: 50%;
+	z-index: 10;
+	margin-top: -3px;
+	content: "";
+	width: 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+	border-left: 0 solid @purplebgColor;
+	border-right: 7px solid @purplebgColor;
+	border-top: 3px dashed transparent;
+	border-bottom: 3px dashed transparent;
+}
+
+.ks-PowerTips_purple .ks-ptleftmiddle {
+	left: auto;
+	right: 0;
+	border-right: 0;
+	border-left-width: 10px;
+}
+
+.ks-PowerTips_purple .ks-ptleftmiddle:after {
+	left: auto;
+	right: 3px;
+	border-right: 0;
+	border-left-width: 7px;
+}
+
+.ks-PowerTips_purple .ks-ptrighttop {
+	left: 0;
+	top: auto;
+	bottom: 18px;
+	border-left: 5px dashed transparent;
+	border-right: 5px solid @purpleborderColor;
+	border-top: 4px dashed transparent;
+	border-bottom: 4px solid @purpleborderColor;
+}
+
+.ks-PowerTips_purple .ks-ptrighttop:after {
+	left: 0px;
+	top: 50%;
+	margin-top: -2px;
+	border-left: 3px dashed transparent;
+	border-right: 3px solid @purplebgColor;
+	border-top: 2px dashed transparent;
+	border-bottom: 2px solid @purplebgColor;
+}
+
+.ks-PowerTips_purple .ks-ptrightbottom {
+	left: 0;
+	top: 24px;
+	border-left: 5px dashed transparent;
+	border-right: 5px solid @purpleborderColor;
+	border-bottom: 4px dashed transparent;
+	border-top: 4px solid @purpleborderColor;
+}
+
+.ks-PowerTips_purple .ks-ptrightbottom:after {
+	left: 0;
+	top: 50%;
+	margin-top: -2px;
+	border-left: 3px dashed transparent;
+	border-right: 3px solid @purplebgColor;
+	border-bottom: 2px dashed transparent;
+	border-top: 2px solid @purplebgColor;
+}
+
+.ks-PowerTips_purple .ks-ptleftbottom {
+	left: auto;
+	right: 0;
+	top: 24px;
+	border-right: 5px dashed transparent;
+	border-left: 5px solid @purpleborderColor;
+	border-bottom: 4px dashed transparent;
+	border-top: 4px solid @purpleborderColor;
+}
+
+.ks-PowerTips_purple .ks-ptleftbottom:after {
+	left: auto;
+	right: 0;
+	top: 50%;
+	margin-top: -2px;
+	border-right: 3px dashed transparent;
+	border-left: 3px solid @purplebgColor;
+	border-bottom: 2px dashed transparent;
+	border-top: 2px solid @purplebgColor;
+}
+
+.ks-PowerTips_purple .ks-ptlefttop {
+	left: auto;
+	right: 0;
+	top: auto;
+	bottom: 18px;
+	border-right: 5px dashed transparent;
+	border-left: 5px solid @purpleborderColor;
+	border-top: 4px dashed transparent;
+	border-bottom: 4px solid @purpleborderColor;
+}
+
+.ks-PowerTips_purple .ks-ptlefttop:after {
+	left: auto;
+	right: 0;
+	top: 50%;
+	margin-top: -2px;
+	border-right: 3px dashed transparent;
+	border-left: 3px solid @purplebgColor;
+	border-top: 2px dashed transparent;
+	border-bottom: 2px solid @purplebgColor;
+}
+
+.ks-PowerTips_purple .ks-pttopleft {
+	left: auto;
+	right: 18px;
+	top: auto;
+	bottom: 0;
+	border-left: 4px dashed transparent;
+	border-right: 4px solid @purpleborderColor;
+	border-bottom: 5px dashed transparent;
+	border-top: 5px solid @purpleborderColor;
+}
+
+.ks-PowerTips_purple .ks-pttopleft:after {
+	left: 50%;
+	top: -2px;
+	margin-left: -1px;
+	border-left: 2px dashed transparent;
+	border-right: 2px solid @purplebgColor;
+	border-bottom: 3px dashed transparent;
+	border-top: 4px solid @purplebgColor;
+}
+
+.ks-PowerTips_purple .ks-pttopcenter {
+	left: 50%;
+	top: auto;
+	bottom: 0;
+	margin-left: -5px;
+	border-left: 5px dashed transparent;
+	border-right: 5px dashed transparent;
+	border-bottom: 0;
+	border-top: 10px solid @purpleborderColor;
+}
+
+.ks-PowerTips_purple .ks-pttopcenter:after {
+	left: 50%;
+	top: -7px;
+	margin-left: -3px;
+	border-left: 3px dashed transparent;
+	border-right: 3px dashed transparent;
+	border-bottom: 0;
+	border-top: 7px solid @purplebgColor;
+}
+
+.ks-PowerTips_purple .ks-pttopright {
+	left: 18px;
+	top: auto;
+	bottom: 0;
+	border-right: 4px dashed transparent;
+	border-left: 4px solid @purpleborderColor;
+	border-bottom: 5px dashed transparent;
+	border-top: 5px solid @purpleborderColor;
+}
+
+.ks-PowerTips_purple .ks-pttopright:after {
+	left: 50%;
+	top: -2px;
+	margin-left: -3px;
+	border-right: 2px dashed transparent;
+	border-left: 2px solid @purplebgColor;
+	border-bottom: 3px dashed transparent;
+	border-top: 4px solid @purplebgColor;
+}
+
+.ks-PowerTips_purple .ks-ptbottomleft {
+	left: auto;
+	right: 18px;
+	top: 5px;
+	border-left: 4px dashed transparent;
+	border-right: 4px solid @purpleborderColor;
+	border-top: 5px dashed transparent;
+	border-bottom: 5px solid @purpleborderColor;
+}
+
+.ks-PowerTips_purple .ks-ptbottomleft:after {
+	left: 50%;
+	top: 1px;
+	margin-left: -1px;
+	border-left: 2px dashed transparent;
+	border-right: 2px solid @purplebgColor;
+	border-top: 3px dashed transparent;
+	border-bottom: 4px solid @purplebgColor;
+}
+
+.ks-PowerTips_purple .ks-ptbottomcenter {
+	left: 50%;
+	top: 5px;
+	margin-left: -5px;
+	border-left: 5px dashed transparent;
+	border-right: 5px dashed transparent;
+	border-top: 0;
+	border-bottom: 10px solid @purpleborderColor;
+}
+
+.ks-PowerTips_purple .ks-ptbottomcenter:after {
+	left: 50%;
+	top: 6px;
+	margin-left: -3px;
+	border-left: 3px dashed transparent;
+	border-right: 3px dashed transparent;
+	border-top: 0;
+	border-bottom: 7px solid @purplebgColor;
+}
+
+.ks-PowerTips_purple .ks-ptbottomright {
+	left: 18px;
+	top: 5px;
+	border-right: 4px dashed transparent;
+	border-left: 4px solid @purpleborderColor;
+	border-top: 5px dashed transparent;
+	border-bottom: 5px solid @purpleborderColor;
+}
+
+.ks-PowerTips_purple .ks-ptbottomright:after {
+	left: 50%;
+	top: 1px;
+	margin-left: -3px;
+	border-right: 2px dashed transparent;
+	border-left: 2px solid @purplebgColor;
+	border-top: 3px dashed transparent;
+	border-bottom: 4px solid @purplebgColor;
+}
+
+.ks-PowerTips_purple .ks-ptcontent {
+	display: block;
+	padding: 5px;
+	word-wrap: normal;
+	word-break: break-all;
+	width: 200px;
+	line-height: 1.5;
+	border: 1px solid @purpleborderColor;
+	border-radius: 4px;
+	background-color: @purplebgColor;
+	color: @purplefontColor;
+}
+/*紫色皮肤样式 结束*/
+
+/*橙色皮肤样式 开始*/
+.ks-PowerTips_orange {
+	display: none;
+	position: absolute;
+	z-index: 10000;
+	padding: 9px;
+	font: 12px/1.5 tahoma, '\5fae\8f6f\96c5\9ed1', sans-serif;
+	overflow: hidden;
+}
+
+.ks-PowerTips_orange .ks-arrow {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	z-index: 9;
+	margin-top: -5px;
+	width: 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+	border-left: 0 solid @orangeborderColor;
+	border-right: 10px solid @orangeborderColor;
+	border-top: 5px dashed transparent;
+	border-bottom: 5px dashed transparent;
+}
+
+.ks-PowerTips_orange .ks-arrow:after {
+	position: absolute;
+	left: 3px;
+	top: 50%;
+	z-index: 10;
+	margin-top: -3px;
+	content: "";
+	width: 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+	border-left: 0 solid @orangebgColor;
+	border-right: 7px solid @orangebgColor;
+	border-top: 3px dashed transparent;
+	border-bottom: 3px dashed transparent;
+}
+
+.ks-PowerTips_orange .ks-ptleftmiddle {
+	left: auto;
+	right: 0;
+	border-right: 0;
+	border-left-width: 10px;
+}
+
+.ks-PowerTips_orange .ks-ptleftmiddle:after {
+	left: auto;
+	right: 3px;
+	border-right: 0;
+	border-left-width: 7px;
+}
+
+.ks-PowerTips_orange .ks-ptrighttop {
+	left: 0;
+	top: auto;
+	bottom: 18px;
+	border-left: 5px dashed transparent;
+	border-right: 5px solid @orangeborderColor;
+	border-top: 4px dashed transparent;
+	border-bottom: 4px solid @orangeborderColor;
+}
+
+.ks-PowerTips_orange .ks-ptrighttop:after {
+	left: 0px;
+	top: 50%;
+	margin-top: -2px;
+	border-left: 3px dashed transparent;
+	border-right: 3px solid @orangebgColor;
+	border-top: 2px dashed transparent;
+	border-bottom: 2px solid @orangebgColor;
+}
+
+.ks-PowerTips_orange .ks-ptrightbottom {
+	left: 0;
+	top: 24px;
+	border-left: 5px dashed transparent;
+	border-right: 5px solid @orangeborderColor;
+	border-bottom: 4px dashed transparent;
+	border-top: 4px solid @orangeborderColor;
+}
+
+.ks-PowerTips_orange .ks-ptrightbottom:after {
+	left: 0;
+	top: 50%;
+	margin-top: -2px;
+	border-left: 3px dashed transparent;
+	border-right: 3px solid @orangebgColor;
+	border-bottom: 2px dashed transparent;
+	border-top: 2px solid @orangebgColor;
+}
+
+.ks-PowerTips_orange .ks-ptleftbottom {
+	left: auto;
+	right: 0;
+	top: 24px;
+	border-right: 5px dashed transparent;
+	border-left: 5px solid @orangeborderColor;
+	border-bottom: 4px dashed transparent;
+	border-top: 4px solid @orangeborderColor;
+}
+
+.ks-PowerTips_orange .ks-ptleftbottom:after {
+	left: auto;
+	right: 0;
+	top: 50%;
+	margin-top: -2px;
+	border-right: 3px dashed transparent;
+	border-left: 3px solid @orangebgColor;
+	border-bottom: 2px dashed transparent;
+	border-top: 2px solid @orangebgColor;
+}
+
+.ks-PowerTips_orange .ks-ptlefttop {
+	left: auto;
+	right: 0;
+	top: auto;
+	bottom: 18px;
+	border-right: 5px dashed transparent;
+	border-left: 5px solid @orangeborderColor;
+	border-top: 4px dashed transparent;
+	border-bottom: 4px solid @orangeborderColor;
+}
+
+.ks-PowerTips_orange .ks-ptlefttop:after {
+	left: auto;
+	right: 0;
+	top: 50%;
+	margin-top: -2px;
+	border-right: 3px dashed transparent;
+	border-left: 3px solid @orangebgColor;
+	border-top: 2px dashed transparent;
+	border-bottom: 2px solid @orangebgColor;
+}
+
+.ks-PowerTips_orange .ks-pttopleft {
+	left: auto;
+	right: 18px;
+	top: auto;
+	bottom: 0;
+	border-left: 4px dashed transparent;
+	border-right: 4px solid @orangeborderColor;
+	border-bottom: 5px dashed transparent;
+	border-top: 5px solid @orangeborderColor;
+}
+
+.ks-PowerTips_orange .ks-pttopleft:after {
+	left: 50%;
+	top: -2px;
+	margin-left: -1px;
+	border-left: 2px dashed transparent;
+	border-right: 2px solid @orangebgColor;
+	border-bottom: 3px dashed transparent;
+	border-top: 4px solid @orangebgColor;
+}
+
+.ks-PowerTips_orange .ks-pttopcenter {
+	left: 50%;
+	top: auto;
+	bottom: 0;
+	margin-left: -5px;
+	border-left: 5px dashed transparent;
+	border-right: 5px dashed transparent;
+	border-bottom: 0;
+	border-top: 10px solid @orangeborderColor;
+}
+
+.ks-PowerTips_orange .ks-pttopcenter:after {
+	left: 50%;
+	top: -7px;
+	margin-left: -3px;
+	border-left: 3px dashed transparent;
+	border-right: 3px dashed transparent;
+	border-bottom: 0;
+	border-top: 7px solid @orangebgColor;
+}
+
+.ks-PowerTips_orange .ks-pttopright {
+	left: 18px;
+	top: auto;
+	bottom: 0;
+	border-right: 4px dashed transparent;
+	border-left: 4px solid @orangeborderColor;
+	border-bottom: 5px dashed transparent;
+	border-top: 5px solid @orangeborderColor;
+}
+
+.ks-PowerTips_orange .ks-pttopright:after {
+	left: 50%;
+	top: -2px;
+	margin-left: -3px;
+	border-right: 2px dashed transparent;
+	border-left: 2px solid @orangebgColor;
+	border-bottom: 3px dashed transparent;
+	border-top: 4px solid @orangebgColor;
+}
+
+.ks-PowerTips_orange .ks-ptbottomleft {
+	left: auto;
+	right: 18px;
+	top: 5px;
+	border-left: 4px dashed transparent;
+	border-right: 4px solid @orangeborderColor;
+	border-top: 5px dashed transparent;
+	border-bottom: 5px solid @orangeborderColor;
+}
+
+.ks-PowerTips_orange .ks-ptbottomleft:after {
+	left: 50%;
+	top: 1px;
+	margin-left: -1px;
+	border-left: 2px dashed transparent;
+	border-right: 2px solid @orangebgColor;
+	border-top: 3px dashed transparent;
+	border-bottom: 4px solid @orangebgColor;
+}
+
+.ks-PowerTips_orange .ks-ptbottomcenter {
+	left: 50%;
+	top: 5px;
+	margin-left: -5px;
+	border-left: 5px dashed transparent;
+	border-right: 5px dashed transparent;
+	border-top: 0;
+	border-bottom: 10px solid @orangeborderColor;
+}
+
+.ks-PowerTips_orange .ks-ptbottomcenter:after {
+	left: 50%;
+	top: 6px;
+	margin-left: -3px;
+	border-left: 3px dashed transparent;
+	border-right: 3px dashed transparent;
+	border-top: 0;
+	border-bottom: 7px solid @orangebgColor;
+}
+
+.ks-PowerTips_orange .ks-ptbottomright {
+	left: 18px;
+	top: 5px;
+	border-right: 4px dashed transparent;
+	border-left: 4px solid @orangeborderColor;
+	border-top: 5px dashed transparent;
+	border-bottom: 5px solid @orangeborderColor;
+}
+
+.ks-PowerTips_orange .ks-ptbottomright:after {
+	left: 50%;
+	top: 1px;
+	margin-left: -3px;
+	border-right: 2px dashed transparent;
+	border-left: 2px solid @orangebgColor;
+	border-top: 3px dashed transparent;
+	border-bottom: 4px solid @orangebgColor;
+}
+
+.ks-PowerTips_orange .ks-ptcontent {
+	display: block;
+	padding: 5px;
+	word-wrap: normal;
+	word-break: break-all;
+	width: 200px;
+	line-height: 1.5;
+	border: 1px solid @orangeborderColor;
+	border-radius: 4px;
+	background-color: @orangebgColor;
+	color: @orangefontColor;
+}
+/*橙色皮肤样式 结束*/
+
+/*蓝色皮肤样式 开始*/
+.ks-PowerTips_blue {
+	display: none;
+	position: absolute;
+	z-index: 10000;
+	padding: 9px;
+	font: 12px/1.5 tahoma, '\5fae\8f6f\96c5\9ed1', sans-serif;
+	overflow: hidden;
+}
+
+.ks-PowerTips_blue .ks-arrow {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	z-index: 9;
+	margin-top: -5px;
+	width: 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+	border-left: 0 solid @blueborderColor;
+	border-right: 10px solid @blueborderColor;
+	border-top: 5px dashed transparent;
+	border-bottom: 5px dashed transparent;
+}
+
+.ks-PowerTips_blue .ks-arrow:after {
+	position: absolute;
+	left: 3px;
+	top: 50%;
+	z-index: 10;
+	margin-top: -3px;
+	content: "";
+	width: 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+	border-left: 0 silid @blueborderColor;
+	border-right: 7px solid @bluebgColor;
+	border-top: 3px dashed transparent;
+	border-bottom: 3px dashed transparent;
+}
+
+.ks-PowerTips_blue .ks-ptleftmiddle {
+	left: auto;
+	right: 0;
+	border-right: 0;
+	border-left-width: 10px;
+}
+
+.ks-PowerTips_blue .ks-ptleftmiddle:after {
+	left: auto;
+	right: 3px;
+	border-right: 0;
+	border-left-width: 7px;
+}
+
+.ks-PowerTips_blue .ks-ptrighttop {
+	left: 0;
+	top: auto;
+	bottom: 18px;
+	border-left: 5px dashed transparent;
+	border-right: 5px solid @blueborderColor;
+	border-top: 4px dashed transparent;
+	border-bottom: 4px solid @blueborderColor;
+}
+
+.ks-PowerTips_blue .ks-ptrighttop:after {
+	left: 0px;
+	top: 50%;
+	margin-top: -2px;
+	border-left: 3px dashed transparent;
+	border-right: 3px solid @bluebgColor;
+	border-top: 2px dashed transparent;
+	border-bottom: 2px solid @bluebgColor;
+}
+
+.ks-PowerTips_blue .ks-ptrightbottom {
+	left: 0;
+	top: 24px;
+	border-left: 5px dashed transparent;
+	border-right: 5px solid @blueborderColor;
+	border-bottom: 4px dashed transparent;
+	border-top: 4px solid @blueborderColor;
+}
+
+.ks-PowerTips_blue .ks-ptrightbottom:after {
+	left: 0;
+	top: 50%;
+	margin-top: -2px;
+	border-left: 3px dashed transparent;
+	border-right: 3px solid @bluebgColor;
+	border-bottom: 2px dashed transparent;
+	border-top: 2px solid @bluebgColor;
+}
+
+.ks-PowerTips_blue .ks-ptleftbottom {
+	left: auto;
+	right: 0;
+	top: 24px;
+	border-right: 5px dashed transparent;
+	border-left: 5px solid @blueborderColor;
+	border-bottom: 4px dashed transparent;
+	border-top: 4px solid @blueborderColor;
+}
+
+.ks-PowerTips_blue .ks-ptleftbottom:after {
+	left: auto;
+	right: 0;
+	top: 50%;
+	margin-top: -2px;
+	border-right: 3px dashed transparent;
+	border-left: 3px solid @bluebgColor;
+	border-bottom: 2px dashed transparent;
+	border-top: 2px solid @bluebgColor;
+}
+
+.ks-PowerTips_blue .ks-ptlefttop {
+	left: auto;
+	right: 0;
+	top: auto;
+	bottom: 18px;
+	border-right: 5px dashed transparent;
+	border-left: 5px solid @blueborderColor;
+	border-top: 4px dashed transparent;
+	border-bottom: 4px solid @blueborderColor;
+}
+
+.ks-PowerTips_blue .ks-ptlefttop:after {
+	left: auto;
+	right: 0;
+	top: 50%;
+	margin-top: -2px;
+	border-right: 3px dashed transparent;
+	border-left: 3px solid @bluebgColor;
+	border-top: 2px dashed transparent;
+	border-bottom: 2px solid @bluebgColor;
+}
+
+.ks-PowerTips_blue .ks-pttopleft {
+	left: auto;
+	right: 18px;
+	top: auto;
+	bottom: 0;
+	border-left: 4px dashed transparent;
+	border-right: 4px solid @blueborderColor;
+	border-bottom: 5px dashed transparent;
+	border-top: 5px solid @blueborderColor;
+}
+
+.ks-PowerTips_blue .ks-pttopleft:after {
+	left: 50%;
+	top: -2px;
+	margin-left: -1px;
+	border-left: 2px dashed transparent;
+	border-right: 2px solid @bluebgColor;
+	border-bottom: 3px dashed transparent;
+	border-top: 4px solid @bluebgColor;
+}
+
+.ks-PowerTips_blue .ks-pttopcenter {
+	left: 50%;
+	top: auto;
+	bottom: 0;
+	margin-left: -5px;
+	border-left: 5px dashed transparent;
+	border-right: 5px dashed transparent;
+	border-bottom: 0;
+	border-top: 10px solid @blueborderColor;
+}
+
+.ks-PowerTips_blue .ks-pttopcenter:after {
+	left: 50%;
+	top: -7px;
+	margin-left: -3px;
+	border-left: 3px dashed transparent;
+	border-right: 3px dashed transparent;
+	border-bottom: 0;
+	border-top: 7px solid @bluebgColor;
+}
+
+.ks-PowerTips_blue .ks-pttopright {
+	left: 18px;
+	top: auto;
+	bottom: 0;
+	border-right: 4px dashed transparent;
+	border-left: 4px solid @blueborderColor;
+	border-bottom: 5px dashed transparent;
+	border-top: 5px solid @blueborderColor;
+}
+
+.ks-PowerTips_blue .ks-pttopright:after {
+	left: 50%;
+	top: -2px;
+	margin-left: -3px;
+	border-right: 2px dashed transparent;
+	border-left: 2px solid @bluebgColor;
+	border-bottom: 3px dashed transparent;
+	border-top: 4px solid @bluebgColor;
+}
+
+.ks-PowerTips_blue .ks-ptbottomleft {
+	left: auto;
+	right: 18px;
+	top: 5px;
+	border-left: 4px dashed transparent;
+	border-right: 4px solid @blueborderColor;
+	border-top: 5px dashed transparent;
+	border-bottom: 5px solid @blueborderColor;
+}
+
+.ks-PowerTips_blue .ks-ptbottomleft:after {
+	left: 50%;
+	top: 1px;
+	margin-left: -1px;
+	border-left: 2px dashed transparent;
+	border-right: 2px solid @bluebgColor;
+	border-top: 3px dashed transparent;
+	border-bottom: 4px solid @bluebgColor;
+}
+
+.ks-PowerTips_blue .ks-ptbottomcenter {
+	left: 50%;
+	top: 5px;
+	margin-left: -5px;
+	border-left: 5px dashed transparent;
+	border-right: 5px dashed transparent;
+	border-top: 0;
+	border-bottom: 10px solid @blueborderColor;
+}
+
+.ks-PowerTips_blue .ks-ptbottomcenter:after {
+	left: 50%;
+	top: 6px;
+	margin-left: -3px;
+	border-left: 3px dashed transparent;
+	border-right: 3px dashed transparent;
+	border-top: 0;
+	border-bottom: 7px solid @bluebgColor;
+}
+
+.ks-PowerTips_blue .ks-ptbottomright {
+	left: 18px;
+	top: 5px;
+	border-right: 4px dashed transparent;
+	border-left: 4px solid @blueborderColor;
+	border-top: 5px dashed transparent;
+	border-bottom: 5px solid @blueborderColor;
+}
+
+.ks-PowerTips_blue .ks-ptbottomright:after {
+	left: 50%;
+	top: 1px;
+	margin-left: -3px;
+	border-right: 2px dashed transparent;
+	border-left: 2px solid @bluebgColor;
+	border-top: 3px dashed transparent;
+	border-bottom: 4px solid @bluebgColor;
+}
+
+.ks-PowerTips_blue .ks-ptcontent {
+	display: block;
+	padding: 5px;
+	word-wrap: normal;
+	word-break: break-all;
+	width: 200px;
+	line-height: 1.5;
+	border: 1px solid @blueborderColor;
+	border-radius: 4px;
+	background-color: @bluebgColor;
+	color: @bluefontColor;
+}
+/*蓝色皮肤样式 结束*/

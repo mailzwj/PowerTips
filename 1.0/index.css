@@ -1,0 +1,1240 @@
+/*默认皮肤样式 开始*/
+.ks-PowerTips_overlay {
+  display: none;
+  position: absolute;
+  z-index: 10000;
+  padding: 9px;
+  font: 12px/1.5 tahoma, '\5fae\8f6f\96c5\9ed1', sans-serif;
+  overflow: hidden;
+}
+.ks-PowerTips_overlay .ks-arrow {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: 9;
+  margin-top: -5px;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  border-left: 0 solid #cccccc;
+  border-right: 10px solid #cccccc;
+  border-top: 5px dashed transparent;
+  border-bottom: 5px dashed transparent;
+}
+.ks-PowerTips_overlay .ks-arrow:after {
+  position: absolute;
+  left: 3px;
+  top: 50%;
+  z-index: 10;
+  margin-top: -3px;
+  content: "";
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  border-left: 0 solid #ffffff;
+  border-right: 7px solid #ffffff;
+  border-top: 3px dashed transparent;
+  border-bottom: 3px dashed transparent;
+}
+.ks-PowerTips_overlay .ks-ptleftmiddle {
+  left: auto;
+  right: 0;
+  border-right: 0;
+  border-left-width: 10px;
+}
+.ks-PowerTips_overlay .ks-ptleftmiddle:after {
+  left: auto;
+  right: 3px;
+  border-right: 0;
+  border-left-width: 7px;
+}
+.ks-PowerTips_overlay .ks-ptrighttop {
+  left: 0;
+  top: auto;
+  bottom: 18px;
+  border-left: 5px dashed transparent;
+  border-right: 5px solid #cccccc;
+  border-top: 4px dashed transparent;
+  border-bottom: 4px solid #cccccc;
+}
+.ks-PowerTips_overlay .ks-ptrighttop:after {
+  left: 0px;
+  top: 50%;
+  margin-top: -2px;
+  border-left: 3px dashed transparent;
+  border-right: 3px solid #ffffff;
+  border-top: 2px dashed transparent;
+  border-bottom: 2px solid #ffffff;
+}
+.ks-PowerTips_overlay .ks-ptrightbottom {
+  left: 0;
+  top: 24px;
+  border-left: 5px dashed transparent;
+  border-right: 5px solid #cccccc;
+  border-bottom: 4px dashed transparent;
+  border-top: 4px solid #cccccc;
+}
+.ks-PowerTips_overlay .ks-ptrightbottom:after {
+  left: 0;
+  top: 50%;
+  margin-top: -2px;
+  border-left: 3px dashed transparent;
+  border-right: 3px solid #ffffff;
+  border-bottom: 2px dashed transparent;
+  border-top: 2px solid #ffffff;
+}
+.ks-PowerTips_overlay .ks-ptleftbottom {
+  left: auto;
+  right: 0;
+  top: 24px;
+  border-right: 5px dashed transparent;
+  border-left: 5px solid #cccccc;
+  border-bottom: 4px dashed transparent;
+  border-top: 4px solid #cccccc;
+}
+.ks-PowerTips_overlay .ks-ptleftbottom:after {
+  left: auto;
+  right: 0;
+  top: 50%;
+  margin-top: -2px;
+  border-right: 3px dashed transparent;
+  border-left: 3px solid #ffffff;
+  border-bottom: 2px dashed transparent;
+  border-top: 2px solid #ffffff;
+}
+.ks-PowerTips_overlay .ks-ptlefttop {
+  left: auto;
+  right: 0;
+  top: auto;
+  bottom: 18px;
+  border-right: 5px dashed transparent;
+  border-left: 5px solid #cccccc;
+  border-top: 4px dashed transparent;
+  border-bottom: 4px solid #cccccc;
+}
+.ks-PowerTips_overlay .ks-ptlefttop:after {
+  left: auto;
+  right: 0;
+  top: 50%;
+  margin-top: -2px;
+  border-right: 3px dashed transparent;
+  border-left: 3px solid #ffffff;
+  border-top: 2px dashed transparent;
+  border-bottom: 2px solid #ffffff;
+}
+.ks-PowerTips_overlay .ks-pttopleft {
+  left: auto;
+  right: 18px;
+  top: auto;
+  bottom: 0;
+  border-left: 4px dashed transparent;
+  border-right: 4px solid #cccccc;
+  border-bottom: 5px dashed transparent;
+  border-top: 5px solid #cccccc;
+}
+.ks-PowerTips_overlay .ks-pttopleft:after {
+  left: 50%;
+  top: -2px;
+  margin-left: -1px;
+  border-left: 2px dashed transparent;
+  border-right: 2px solid #ffffff;
+  border-bottom: 3px dashed transparent;
+  border-top: 4px solid #ffffff;
+}
+.ks-PowerTips_overlay .ks-pttopcenter {
+  left: 50%;
+  top: auto;
+  bottom: 0;
+  margin-left: -5px;
+  border-left: 5px dashed transparent;
+  border-right: 5px dashed transparent;
+  border-bottom: 0;
+  border-top: 10px solid #cccccc;
+}
+.ks-PowerTips_overlay .ks-pttopcenter:after {
+  left: 50%;
+  top: -7px;
+  margin-left: -3px;
+  border-left: 3px dashed transparent;
+  border-right: 3px dashed transparent;
+  border-bottom: 0;
+  border-top: 7px solid #ffffff;
+}
+.ks-PowerTips_overlay .ks-pttopright {
+  left: 18px;
+  top: auto;
+  bottom: 0;
+  border-right: 4px dashed transparent;
+  border-left: 4px solid #cccccc;
+  border-bottom: 5px dashed transparent;
+  border-top: 5px solid #cccccc;
+}
+.ks-PowerTips_overlay .ks-pttopright:after {
+  left: 50%;
+  top: -2px;
+  margin-left: -3px;
+  border-right: 2px dashed transparent;
+  border-left: 2px solid #ffffff;
+  border-bottom: 3px dashed transparent;
+  border-top: 4px solid #ffffff;
+}
+.ks-PowerTips_overlay .ks-ptbottomleft {
+  left: auto;
+  right: 18px;
+  top: 5px;
+  border-left: 4px dashed transparent;
+  border-right: 4px solid #cccccc;
+  border-top: 5px dashed transparent;
+  border-bottom: 5px solid #cccccc;
+}
+.ks-PowerTips_overlay .ks-ptbottomleft:after {
+  left: 50%;
+  top: 1px;
+  margin-left: -1px;
+  border-left: 2px dashed transparent;
+  border-right: 2px solid #ffffff;
+  border-top: 3px dashed transparent;
+  border-bottom: 4px solid #ffffff;
+}
+.ks-PowerTips_overlay .ks-ptbottomcenter {
+  left: 50%;
+  top: 5px;
+  margin-left: -5px;
+  border-left: 5px dashed transparent;
+  border-right: 5px dashed transparent;
+  border-top: 0;
+  border-bottom: 10px solid #cccccc;
+}
+.ks-PowerTips_overlay .ks-ptbottomcenter:after {
+  left: 50%;
+  top: 6px;
+  margin-left: -3px;
+  border-left: 3px dashed transparent;
+  border-right: 3px dashed transparent;
+  border-top: 0;
+  border-bottom: 7px solid #ffffff;
+}
+.ks-PowerTips_overlay .ks-ptbottomright {
+  left: 18px;
+  top: 5px;
+  border-right: 4px dashed transparent;
+  border-left: 4px solid #cccccc;
+  border-top: 5px dashed transparent;
+  border-bottom: 5px solid #cccccc;
+}
+.ks-PowerTips_overlay .ks-ptbottomright:after {
+  left: 50%;
+  top: 1px;
+  margin-left: -3px;
+  border-right: 2px dashed transparent;
+  border-left: 2px solid #ffffff;
+  border-top: 3px dashed transparent;
+  border-bottom: 4px solid #ffffff;
+}
+.ks-PowerTips_overlay .ks-ptcontent {
+  display: block;
+  padding: 5px;
+  word-wrap: normal;
+  word-break: break-all;
+  width: 200px;
+  line-height: 1.5;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #333333;
+}
+/*默认皮肤样式 结束*/
+/*红色皮肤样式 开始*/
+.ks-PowerTips_red {
+  display: none;
+  position: absolute;
+  z-index: 10000;
+  padding: 9px;
+  font: 12px/1.5 tahoma, '\5fae\8f6f\96c5\9ed1', sans-serif;
+  overflow: hidden;
+}
+.ks-PowerTips_red .ks-arrow {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: 9;
+  margin-top: -5px;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  border-left: 0 solid #ff0000;
+  border-right: 10px solid #ff0000;
+  border-top: 5px dashed transparent;
+  border-bottom: 5px dashed transparent;
+}
+.ks-PowerTips_red .ks-arrow:after {
+  position: absolute;
+  left: 3px;
+  top: 50%;
+  z-index: 10;
+  margin-top: -3px;
+  content: "";
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  border-left: 0 solid #ffffff;
+  border-right: 7px solid #ffffff;
+  border-top: 3px dashed transparent;
+  border-bottom: 3px dashed transparent;
+}
+.ks-PowerTips_red .ks-ptleftmiddle {
+  left: auto;
+  right: 0;
+  border-right: 0;
+  border-left-width: 10px;
+}
+.ks-PowerTips_red .ks-ptleftmiddle:after {
+  left: auto;
+  right: 3px;
+  border-right: 0;
+  border-left-width: 7px;
+}
+.ks-PowerTips_red .ks-ptrighttop {
+  left: 0;
+  top: auto;
+  bottom: 18px;
+  border-left: 5px dashed transparent;
+  border-right: 5px solid #ff0000;
+  border-top: 4px dashed transparent;
+  border-bottom: 4px solid #ff0000;
+}
+.ks-PowerTips_red .ks-ptrighttop:after {
+  left: 0px;
+  top: 50%;
+  margin-top: -2px;
+  border-left: 3px dashed transparent;
+  border-right: 3px solid #ffffff;
+  border-top: 2px dashed transparent;
+  border-bottom: 2px solid #ffffff;
+}
+.ks-PowerTips_red .ks-ptrightbottom {
+  left: 0;
+  top: 24px;
+  border-left: 5px dashed transparent;
+  border-right: 5px solid #ff0000;
+  border-bottom: 4px dashed transparent;
+  border-top: 4px solid #ff0000;
+}
+.ks-PowerTips_red .ks-ptrightbottom:after {
+  left: 0;
+  top: 50%;
+  margin-top: -2px;
+  border-left: 3px dashed transparent;
+  border-right: 3px solid #ffffff;
+  border-bottom: 2px dashed transparent;
+  border-top: 2px solid #ffffff;
+}
+.ks-PowerTips_red .ks-ptleftbottom {
+  left: auto;
+  right: 0;
+  top: 24px;
+  border-right: 5px dashed transparent;
+  border-left: 5px solid #ff0000;
+  border-bottom: 4px dashed transparent;
+  border-top: 4px solid #ff0000;
+}
+.ks-PowerTips_red .ks-ptleftbottom:after {
+  left: auto;
+  right: 0;
+  top: 50%;
+  margin-top: -2px;
+  border-right: 3px dashed transparent;
+  border-left: 3px solid #ffffff;
+  border-bottom: 2px dashed transparent;
+  border-top: 2px solid #ffffff;
+}
+.ks-PowerTips_red .ks-ptlefttop {
+  left: auto;
+  right: 0;
+  top: auto;
+  bottom: 18px;
+  border-right: 5px dashed transparent;
+  border-left: 5px solid #ff0000;
+  border-top: 4px dashed transparent;
+  border-bottom: 4px solid #ff0000;
+}
+.ks-PowerTips_red .ks-ptlefttop:after {
+  left: auto;
+  right: 0;
+  top: 50%;
+  margin-top: -2px;
+  border-right: 3px dashed transparent;
+  border-left: 3px solid #ffffff;
+  border-top: 2px dashed transparent;
+  border-bottom: 2px solid #ffffff;
+}
+.ks-PowerTips_red .ks-pttopleft {
+  left: auto;
+  right: 18px;
+  top: auto;
+  bottom: 0;
+  border-left: 4px dashed transparent;
+  border-right: 4px solid #ff0000;
+  border-bottom: 5px dashed transparent;
+  border-top: 5px solid #ff0000;
+}
+.ks-PowerTips_red .ks-pttopleft:after {
+  left: 50%;
+  top: -2px;
+  margin-left: -1px;
+  border-left: 2px dashed transparent;
+  border-right: 2px solid #ffffff;
+  border-bottom: 3px dashed transparent;
+  border-top: 4px solid #ffffff;
+}
+.ks-PowerTips_red .ks-pttopcenter {
+  left: 50%;
+  top: auto;
+  bottom: 0;
+  margin-left: -5px;
+  border-left: 5px dashed transparent;
+  border-right: 5px dashed transparent;
+  border-bottom: 0;
+  border-top: 10px solid #ff0000;
+}
+.ks-PowerTips_red .ks-pttopcenter:after {
+  left: 50%;
+  top: -7px;
+  margin-left: -3px;
+  border-left: 3px dashed transparent;
+  border-right: 3px dashed transparent;
+  border-bottom: 0;
+  border-top: 7px solid #ffffff;
+}
+.ks-PowerTips_red .ks-pttopright {
+  left: 18px;
+  top: auto;
+  bottom: 0;
+  border-right: 4px dashed transparent;
+  border-left: 4px solid #ff0000;
+  border-bottom: 5px dashed transparent;
+  border-top: 5px solid #ff0000;
+}
+.ks-PowerTips_red .ks-pttopright:after {
+  left: 50%;
+  top: -2px;
+  margin-left: -3px;
+  border-right: 2px dashed transparent;
+  border-left: 2px solid #ffffff;
+  border-bottom: 3px dashed transparent;
+  border-top: 4px solid #ffffff;
+}
+.ks-PowerTips_red .ks-ptbottomleft {
+  left: auto;
+  right: 18px;
+  top: 5px;
+  border-left: 4px dashed transparent;
+  border-right: 4px solid #ff0000;
+  border-top: 5px dashed transparent;
+  border-bottom: 5px solid #ff0000;
+}
+.ks-PowerTips_red .ks-ptbottomleft:after {
+  left: 50%;
+  top: 1px;
+  margin-left: -1px;
+  border-left: 2px dashed transparent;
+  border-right: 2px solid #ffffff;
+  border-top: 3px dashed transparent;
+  border-bottom: 4px solid #ffffff;
+}
+.ks-PowerTips_red .ks-ptbottomcenter {
+  left: 50%;
+  top: 5px;
+  margin-left: -5px;
+  border-left: 5px dashed transparent;
+  border-right: 5px dashed transparent;
+  border-top: 0;
+  border-bottom: 10px solid #ff0000;
+}
+.ks-PowerTips_red .ks-ptbottomcenter:after {
+  left: 50%;
+  top: 6px;
+  margin-left: -3px;
+  border-left: 3px dashed transparent;
+  border-right: 3px dashed transparent;
+  border-top: 0;
+  border-bottom: 7px solid #ffffff;
+}
+.ks-PowerTips_red .ks-ptbottomright {
+  left: 18px;
+  top: 5px;
+  border-right: 4px dashed transparent;
+  border-left: 4px solid #ff0000;
+  border-top: 5px dashed transparent;
+  border-bottom: 5px solid #ff0000;
+}
+.ks-PowerTips_red .ks-ptbottomright:after {
+  left: 50%;
+  top: 1px;
+  margin-left: -3px;
+  border-right: 2px dashed transparent;
+  border-left: 2px solid #ffffff;
+  border-top: 3px dashed transparent;
+  border-bottom: 4px solid #ffffff;
+}
+.ks-PowerTips_red .ks-ptcontent {
+  display: block;
+  padding: 5px;
+  word-wrap: normal;
+  word-break: break-all;
+  width: 200px;
+  line-height: 1.5;
+  border: 1px solid #ff0000;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #333333;
+}
+/*红色皮肤样式 结束*/
+/*紫色皮肤样式 开始*/
+.ks-PowerTips_purple {
+  display: none;
+  position: absolute;
+  z-index: 10000;
+  padding: 9px;
+  font: 12px/1.5 tahoma, '\5fae\8f6f\96c5\9ed1', sans-serif;
+  overflow: hidden;
+}
+.ks-PowerTips_purple .ks-arrow {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: 9;
+  margin-top: -5px;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  border-left: 0 solid #800080;
+  border-right: 10px solid #800080;
+  border-top: 5px dashed transparent;
+  border-bottom: 5px dashed transparent;
+}
+.ks-PowerTips_purple .ks-arrow:after {
+  position: absolute;
+  left: 3px;
+  top: 50%;
+  z-index: 10;
+  margin-top: -3px;
+  content: "";
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  border-left: 0 solid #ffffff;
+  border-right: 7px solid #ffffff;
+  border-top: 3px dashed transparent;
+  border-bottom: 3px dashed transparent;
+}
+.ks-PowerTips_purple .ks-ptleftmiddle {
+  left: auto;
+  right: 0;
+  border-right: 0;
+  border-left-width: 10px;
+}
+.ks-PowerTips_purple .ks-ptleftmiddle:after {
+  left: auto;
+  right: 3px;
+  border-right: 0;
+  border-left-width: 7px;
+}
+.ks-PowerTips_purple .ks-ptrighttop {
+  left: 0;
+  top: auto;
+  bottom: 18px;
+  border-left: 5px dashed transparent;
+  border-right: 5px solid #800080;
+  border-top: 4px dashed transparent;
+  border-bottom: 4px solid #800080;
+}
+.ks-PowerTips_purple .ks-ptrighttop:after {
+  left: 0px;
+  top: 50%;
+  margin-top: -2px;
+  border-left: 3px dashed transparent;
+  border-right: 3px solid #ffffff;
+  border-top: 2px dashed transparent;
+  border-bottom: 2px solid #ffffff;
+}
+.ks-PowerTips_purple .ks-ptrightbottom {
+  left: 0;
+  top: 24px;
+  border-left: 5px dashed transparent;
+  border-right: 5px solid #800080;
+  border-bottom: 4px dashed transparent;
+  border-top: 4px solid #800080;
+}
+.ks-PowerTips_purple .ks-ptrightbottom:after {
+  left: 0;
+  top: 50%;
+  margin-top: -2px;
+  border-left: 3px dashed transparent;
+  border-right: 3px solid #ffffff;
+  border-bottom: 2px dashed transparent;
+  border-top: 2px solid #ffffff;
+}
+.ks-PowerTips_purple .ks-ptleftbottom {
+  left: auto;
+  right: 0;
+  top: 24px;
+  border-right: 5px dashed transparent;
+  border-left: 5px solid #800080;
+  border-bottom: 4px dashed transparent;
+  border-top: 4px solid #800080;
+}
+.ks-PowerTips_purple .ks-ptleftbottom:after {
+  left: auto;
+  right: 0;
+  top: 50%;
+  margin-top: -2px;
+  border-right: 3px dashed transparent;
+  border-left: 3px solid #ffffff;
+  border-bottom: 2px dashed transparent;
+  border-top: 2px solid #ffffff;
+}
+.ks-PowerTips_purple .ks-ptlefttop {
+  left: auto;
+  right: 0;
+  top: auto;
+  bottom: 18px;
+  border-right: 5px dashed transparent;
+  border-left: 5px solid #800080;
+  border-top: 4px dashed transparent;
+  border-bottom: 4px solid #800080;
+}
+.ks-PowerTips_purple .ks-ptlefttop:after {
+  left: auto;
+  right: 0;
+  top: 50%;
+  margin-top: -2px;
+  border-right: 3px dashed transparent;
+  border-left: 3px solid #ffffff;
+  border-top: 2px dashed transparent;
+  border-bottom: 2px solid #ffffff;
+}
+.ks-PowerTips_purple .ks-pttopleft {
+  left: auto;
+  right: 18px;
+  top: auto;
+  bottom: 0;
+  border-left: 4px dashed transparent;
+  border-right: 4px solid #800080;
+  border-bottom: 5px dashed transparent;
+  border-top: 5px solid #800080;
+}
+.ks-PowerTips_purple .ks-pttopleft:after {
+  left: 50%;
+  top: -2px;
+  margin-left: -1px;
+  border-left: 2px dashed transparent;
+  border-right: 2px solid #ffffff;
+  border-bottom: 3px dashed transparent;
+  border-top: 4px solid #ffffff;
+}
+.ks-PowerTips_purple .ks-pttopcenter {
+  left: 50%;
+  top: auto;
+  bottom: 0;
+  margin-left: -5px;
+  border-left: 5px dashed transparent;
+  border-right: 5px dashed transparent;
+  border-bottom: 0;
+  border-top: 10px solid #800080;
+}
+.ks-PowerTips_purple .ks-pttopcenter:after {
+  left: 50%;
+  top: -7px;
+  margin-left: -3px;
+  border-left: 3px dashed transparent;
+  border-right: 3px dashed transparent;
+  border-bottom: 0;
+  border-top: 7px solid #ffffff;
+}
+.ks-PowerTips_purple .ks-pttopright {
+  left: 18px;
+  top: auto;
+  bottom: 0;
+  border-right: 4px dashed transparent;
+  border-left: 4px solid #800080;
+  border-bottom: 5px dashed transparent;
+  border-top: 5px solid #800080;
+}
+.ks-PowerTips_purple .ks-pttopright:after {
+  left: 50%;
+  top: -2px;
+  margin-left: -3px;
+  border-right: 2px dashed transparent;
+  border-left: 2px solid #ffffff;
+  border-bottom: 3px dashed transparent;
+  border-top: 4px solid #ffffff;
+}
+.ks-PowerTips_purple .ks-ptbottomleft {
+  left: auto;
+  right: 18px;
+  top: 5px;
+  border-left: 4px dashed transparent;
+  border-right: 4px solid #800080;
+  border-top: 5px dashed transparent;
+  border-bottom: 5px solid #800080;
+}
+.ks-PowerTips_purple .ks-ptbottomleft:after {
+  left: 50%;
+  top: 1px;
+  margin-left: -1px;
+  border-left: 2px dashed transparent;
+  border-right: 2px solid #ffffff;
+  border-top: 3px dashed transparent;
+  border-bottom: 4px solid #ffffff;
+}
+.ks-PowerTips_purple .ks-ptbottomcenter {
+  left: 50%;
+  top: 5px;
+  margin-left: -5px;
+  border-left: 5px dashed transparent;
+  border-right: 5px dashed transparent;
+  border-top: 0;
+  border-bottom: 10px solid #800080;
+}
+.ks-PowerTips_purple .ks-ptbottomcenter:after {
+  left: 50%;
+  top: 6px;
+  margin-left: -3px;
+  border-left: 3px dashed transparent;
+  border-right: 3px dashed transparent;
+  border-top: 0;
+  border-bottom: 7px solid #ffffff;
+}
+.ks-PowerTips_purple .ks-ptbottomright {
+  left: 18px;
+  top: 5px;
+  border-right: 4px dashed transparent;
+  border-left: 4px solid #800080;
+  border-top: 5px dashed transparent;
+  border-bottom: 5px solid #800080;
+}
+.ks-PowerTips_purple .ks-ptbottomright:after {
+  left: 50%;
+  top: 1px;
+  margin-left: -3px;
+  border-right: 2px dashed transparent;
+  border-left: 2px solid #ffffff;
+  border-top: 3px dashed transparent;
+  border-bottom: 4px solid #ffffff;
+}
+.ks-PowerTips_purple .ks-ptcontent {
+  display: block;
+  padding: 5px;
+  word-wrap: normal;
+  word-break: break-all;
+  width: 200px;
+  line-height: 1.5;
+  border: 1px solid #800080;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #333333;
+}
+/*紫色皮肤样式 结束*/
+/*橙色皮肤样式 开始*/
+.ks-PowerTips_orange {
+  display: none;
+  position: absolute;
+  z-index: 10000;
+  padding: 9px;
+  font: 12px/1.5 tahoma, '\5fae\8f6f\96c5\9ed1', sans-serif;
+  overflow: hidden;
+}
+.ks-PowerTips_orange .ks-arrow {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: 9;
+  margin-top: -5px;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  border-left: 0 solid #ffa500;
+  border-right: 10px solid #ffa500;
+  border-top: 5px dashed transparent;
+  border-bottom: 5px dashed transparent;
+}
+.ks-PowerTips_orange .ks-arrow:after {
+  position: absolute;
+  left: 3px;
+  top: 50%;
+  z-index: 10;
+  margin-top: -3px;
+  content: "";
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  border-left: 0 solid #ffffff;
+  border-right: 7px solid #ffffff;
+  border-top: 3px dashed transparent;
+  border-bottom: 3px dashed transparent;
+}
+.ks-PowerTips_orange .ks-ptleftmiddle {
+  left: auto;
+  right: 0;
+  border-right: 0;
+  border-left-width: 10px;
+}
+.ks-PowerTips_orange .ks-ptleftmiddle:after {
+  left: auto;
+  right: 3px;
+  border-right: 0;
+  border-left-width: 7px;
+}
+.ks-PowerTips_orange .ks-ptrighttop {
+  left: 0;
+  top: auto;
+  bottom: 18px;
+  border-left: 5px dashed transparent;
+  border-right: 5px solid #ffa500;
+  border-top: 4px dashed transparent;
+  border-bottom: 4px solid #ffa500;
+}
+.ks-PowerTips_orange .ks-ptrighttop:after {
+  left: 0px;
+  top: 50%;
+  margin-top: -2px;
+  border-left: 3px dashed transparent;
+  border-right: 3px solid #ffffff;
+  border-top: 2px dashed transparent;
+  border-bottom: 2px solid #ffffff;
+}
+.ks-PowerTips_orange .ks-ptrightbottom {
+  left: 0;
+  top: 24px;
+  border-left: 5px dashed transparent;
+  border-right: 5px solid #ffa500;
+  border-bottom: 4px dashed transparent;
+  border-top: 4px solid #ffa500;
+}
+.ks-PowerTips_orange .ks-ptrightbottom:after {
+  left: 0;
+  top: 50%;
+  margin-top: -2px;
+  border-left: 3px dashed transparent;
+  border-right: 3px solid #ffffff;
+  border-bottom: 2px dashed transparent;
+  border-top: 2px solid #ffffff;
+}
+.ks-PowerTips_orange .ks-ptleftbottom {
+  left: auto;
+  right: 0;
+  top: 24px;
+  border-right: 5px dashed transparent;
+  border-left: 5px solid #ffa500;
+  border-bottom: 4px dashed transparent;
+  border-top: 4px solid #ffa500;
+}
+.ks-PowerTips_orange .ks-ptleftbottom:after {
+  left: auto;
+  right: 0;
+  top: 50%;
+  margin-top: -2px;
+  border-right: 3px dashed transparent;
+  border-left: 3px solid #ffffff;
+  border-bottom: 2px dashed transparent;
+  border-top: 2px solid #ffffff;
+}
+.ks-PowerTips_orange .ks-ptlefttop {
+  left: auto;
+  right: 0;
+  top: auto;
+  bottom: 18px;
+  border-right: 5px dashed transparent;
+  border-left: 5px solid #ffa500;
+  border-top: 4px dashed transparent;
+  border-bottom: 4px solid #ffa500;
+}
+.ks-PowerTips_orange .ks-ptlefttop:after {
+  left: auto;
+  right: 0;
+  top: 50%;
+  margin-top: -2px;
+  border-right: 3px dashed transparent;
+  border-left: 3px solid #ffffff;
+  border-top: 2px dashed transparent;
+  border-bottom: 2px solid #ffffff;
+}
+.ks-PowerTips_orange .ks-pttopleft {
+  left: auto;
+  right: 18px;
+  top: auto;
+  bottom: 0;
+  border-left: 4px dashed transparent;
+  border-right: 4px solid #ffa500;
+  border-bottom: 5px dashed transparent;
+  border-top: 5px solid #ffa500;
+}
+.ks-PowerTips_orange .ks-pttopleft:after {
+  left: 50%;
+  top: -2px;
+  margin-left: -1px;
+  border-left: 2px dashed transparent;
+  border-right: 2px solid #ffffff;
+  border-bottom: 3px dashed transparent;
+  border-top: 4px solid #ffffff;
+}
+.ks-PowerTips_orange .ks-pttopcenter {
+  left: 50%;
+  top: auto;
+  bottom: 0;
+  margin-left: -5px;
+  border-left: 5px dashed transparent;
+  border-right: 5px dashed transparent;
+  border-bottom: 0;
+  border-top: 10px solid #ffa500;
+}
+.ks-PowerTips_orange .ks-pttopcenter:after {
+  left: 50%;
+  top: -7px;
+  margin-left: -3px;
+  border-left: 3px dashed transparent;
+  border-right: 3px dashed transparent;
+  border-bottom: 0;
+  border-top: 7px solid #ffffff;
+}
+.ks-PowerTips_orange .ks-pttopright {
+  left: 18px;
+  top: auto;
+  bottom: 0;
+  border-right: 4px dashed transparent;
+  border-left: 4px solid #ffa500;
+  border-bottom: 5px dashed transparent;
+  border-top: 5px solid #ffa500;
+}
+.ks-PowerTips_orange .ks-pttopright:after {
+  left: 50%;
+  top: -2px;
+  margin-left: -3px;
+  border-right: 2px dashed transparent;
+  border-left: 2px solid #ffffff;
+  border-bottom: 3px dashed transparent;
+  border-top: 4px solid #ffffff;
+}
+.ks-PowerTips_orange .ks-ptbottomleft {
+  left: auto;
+  right: 18px;
+  top: 5px;
+  border-left: 4px dashed transparent;
+  border-right: 4px solid #ffa500;
+  border-top: 5px dashed transparent;
+  border-bottom: 5px solid #ffa500;
+}
+.ks-PowerTips_orange .ks-ptbottomleft:after {
+  left: 50%;
+  top: 1px;
+  margin-left: -1px;
+  border-left: 2px dashed transparent;
+  border-right: 2px solid #ffffff;
+  border-top: 3px dashed transparent;
+  border-bottom: 4px solid #ffffff;
+}
+.ks-PowerTips_orange .ks-ptbottomcenter {
+  left: 50%;
+  top: 5px;
+  margin-left: -5px;
+  border-left: 5px dashed transparent;
+  border-right: 5px dashed transparent;
+  border-top: 0;
+  border-bottom: 10px solid #ffa500;
+}
+.ks-PowerTips_orange .ks-ptbottomcenter:after {
+  left: 50%;
+  top: 6px;
+  margin-left: -3px;
+  border-left: 3px dashed transparent;
+  border-right: 3px dashed transparent;
+  border-top: 0;
+  border-bottom: 7px solid #ffffff;
+}
+.ks-PowerTips_orange .ks-ptbottomright {
+  left: 18px;
+  top: 5px;
+  border-right: 4px dashed transparent;
+  border-left: 4px solid #ffa500;
+  border-top: 5px dashed transparent;
+  border-bottom: 5px solid #ffa500;
+}
+.ks-PowerTips_orange .ks-ptbottomright:after {
+  left: 50%;
+  top: 1px;
+  margin-left: -3px;
+  border-right: 2px dashed transparent;
+  border-left: 2px solid #ffffff;
+  border-top: 3px dashed transparent;
+  border-bottom: 4px solid #ffffff;
+}
+.ks-PowerTips_orange .ks-ptcontent {
+  display: block;
+  padding: 5px;
+  word-wrap: normal;
+  word-break: break-all;
+  width: 200px;
+  line-height: 1.5;
+  border: 1px solid #ffa500;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #333333;
+}
+/*橙色皮肤样式 结束*/
+/*蓝色皮肤样式 开始*/
+.ks-PowerTips_blue {
+  display: none;
+  position: absolute;
+  z-index: 10000;
+  padding: 9px;
+  font: 12px/1.5 tahoma, '\5fae\8f6f\96c5\9ed1', sans-serif;
+  overflow: hidden;
+}
+.ks-PowerTips_blue .ks-arrow {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: 9;
+  margin-top: -5px;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  border-left: 0 solid #0000ff;
+  border-right: 10px solid #0000ff;
+  border-top: 5px dashed transparent;
+  border-bottom: 5px dashed transparent;
+}
+.ks-PowerTips_blue .ks-arrow:after {
+  position: absolute;
+  left: 3px;
+  top: 50%;
+  z-index: 10;
+  margin-top: -3px;
+  content: "";
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  border-left: 0 silid #0000ff;
+  border-right: 7px solid #ffffff;
+  border-top: 3px dashed transparent;
+  border-bottom: 3px dashed transparent;
+}
+.ks-PowerTips_blue .ks-ptleftmiddle {
+  left: auto;
+  right: 0;
+  border-right: 0;
+  border-left-width: 10px;
+}
+.ks-PowerTips_blue .ks-ptleftmiddle:after {
+  left: auto;
+  right: 3px;
+  border-right: 0;
+  border-left-width: 7px;
+}
+.ks-PowerTips_blue .ks-ptrighttop {
+  left: 0;
+  top: auto;
+  bottom: 18px;
+  border-left: 5px dashed transparent;
+  border-right: 5px solid #0000ff;
+  border-top: 4px dashed transparent;
+  border-bottom: 4px solid #0000ff;
+}
+.ks-PowerTips_blue .ks-ptrighttop:after {
+  left: 0px;
+  top: 50%;
+  margin-top: -2px;
+  border-left: 3px dashed transparent;
+  border-right: 3px solid #ffffff;
+  border-top: 2px dashed transparent;
+  border-bottom: 2px solid #ffffff;
+}
+.ks-PowerTips_blue .ks-ptrightbottom {
+  left: 0;
+  top: 24px;
+  border-left: 5px dashed transparent;
+  border-right: 5px solid #0000ff;
+  border-bottom: 4px dashed transparent;
+  border-top: 4px solid #0000ff;
+}
+.ks-PowerTips_blue .ks-ptrightbottom:after {
+  left: 0;
+  top: 50%;
+  margin-top: -2px;
+  border-left: 3px dashed transparent;
+  border-right: 3px solid #ffffff;
+  border-bottom: 2px dashed transparent;
+  border-top: 2px solid #ffffff;
+}
+.ks-PowerTips_blue .ks-ptleftbottom {
+  left: auto;
+  right: 0;
+  top: 24px;
+  border-right: 5px dashed transparent;
+  border-left: 5px solid #0000ff;
+  border-bottom: 4px dashed transparent;
+  border-top: 4px solid #0000ff;
+}
+.ks-PowerTips_blue .ks-ptleftbottom:after {
+  left: auto;
+  right: 0;
+  top: 50%;
+  margin-top: -2px;
+  border-right: 3px dashed transparent;
+  border-left: 3px solid #ffffff;
+  border-bottom: 2px dashed transparent;
+  border-top: 2px solid #ffffff;
+}
+.ks-PowerTips_blue .ks-ptlefttop {
+  left: auto;
+  right: 0;
+  top: auto;
+  bottom: 18px;
+  border-right: 5px dashed transparent;
+  border-left: 5px solid #0000ff;
+  border-top: 4px dashed transparent;
+  border-bottom: 4px solid #0000ff;
+}
+.ks-PowerTips_blue .ks-ptlefttop:after {
+  left: auto;
+  right: 0;
+  top: 50%;
+  margin-top: -2px;
+  border-right: 3px dashed transparent;
+  border-left: 3px solid #ffffff;
+  border-top: 2px dashed transparent;
+  border-bottom: 2px solid #ffffff;
+}
+.ks-PowerTips_blue .ks-pttopleft {
+  left: auto;
+  right: 18px;
+  top: auto;
+  bottom: 0;
+  border-left: 4px dashed transparent;
+  border-right: 4px solid #0000ff;
+  border-bottom: 5px dashed transparent;
+  border-top: 5px solid #0000ff;
+}
+.ks-PowerTips_blue .ks-pttopleft:after {
+  left: 50%;
+  top: -2px;
+  margin-left: -1px;
+  border-left: 2px dashed transparent;
+  border-right: 2px solid #ffffff;
+  border-bottom: 3px dashed transparent;
+  border-top: 4px solid #ffffff;
+}
+.ks-PowerTips_blue .ks-pttopcenter {
+  left: 50%;
+  top: auto;
+  bottom: 0;
+  margin-left: -5px;
+  border-left: 5px dashed transparent;
+  border-right: 5px dashed transparent;
+  border-bottom: 0;
+  border-top: 10px solid #0000ff;
+}
+.ks-PowerTips_blue .ks-pttopcenter:after {
+  left: 50%;
+  top: -7px;
+  margin-left: -3px;
+  border-left: 3px dashed transparent;
+  border-right: 3px dashed transparent;
+  border-bottom: 0;
+  border-top: 7px solid #ffffff;
+}
+.ks-PowerTips_blue .ks-pttopright {
+  left: 18px;
+  top: auto;
+  bottom: 0;
+  border-right: 4px dashed transparent;
+  border-left: 4px solid #0000ff;
+  border-bottom: 5px dashed transparent;
+  border-top: 5px solid #0000ff;
+}
+.ks-PowerTips_blue .ks-pttopright:after {
+  left: 50%;
+  top: -2px;
+  margin-left: -3px;
+  border-right: 2px dashed transparent;
+  border-left: 2px solid #ffffff;
+  border-bottom: 3px dashed transparent;
+  border-top: 4px solid #ffffff;
+}
+.ks-PowerTips_blue .ks-ptbottomleft {
+  left: auto;
+  right: 18px;
+  top: 5px;
+  border-left: 4px dashed transparent;
+  border-right: 4px solid #0000ff;
+  border-top: 5px dashed transparent;
+  border-bottom: 5px solid #0000ff;
+}
+.ks-PowerTips_blue .ks-ptbottomleft:after {
+  left: 50%;
+  top: 1px;
+  margin-left: -1px;
+  border-left: 2px dashed transparent;
+  border-right: 2px solid #ffffff;
+  border-top: 3px dashed transparent;
+  border-bottom: 4px solid #ffffff;
+}
+.ks-PowerTips_blue .ks-ptbottomcenter {
+  left: 50%;
+  top: 5px;
+  margin-left: -5px;
+  border-left: 5px dashed transparent;
+  border-right: 5px dashed transparent;
+  border-top: 0;
+  border-bottom: 10px solid #0000ff;
+}
+.ks-PowerTips_blue .ks-ptbottomcenter:after {
+  left: 50%;
+  top: 6px;
+  margin-left: -3px;
+  border-left: 3px dashed transparent;
+  border-right: 3px dashed transparent;
+  border-top: 0;
+  border-bottom: 7px solid #ffffff;
+}
+.ks-PowerTips_blue .ks-ptbottomright {
+  left: 18px;
+  top: 5px;
+  border-right: 4px dashed transparent;
+  border-left: 4px solid #0000ff;
+  border-top: 5px dashed transparent;
+  border-bottom: 5px solid #0000ff;
+}
+.ks-PowerTips_blue .ks-ptbottomright:after {
+  left: 50%;
+  top: 1px;
+  margin-left: -3px;
+  border-right: 2px dashed transparent;
+  border-left: 2px solid #ffffff;
+  border-top: 3px dashed transparent;
+  border-bottom: 4px solid #ffffff;
+}
+.ks-PowerTips_blue .ks-ptcontent {
+  display: block;
+  padding: 5px;
+  word-wrap: normal;
+  word-break: break-all;
+  width: 200px;
+  line-height: 1.5;
+  border: 1px solid #0000ff;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #333333;
+}
+/*蓝色皮肤样式 结束*/
