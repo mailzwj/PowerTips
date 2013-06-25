@@ -17,7 +17,6 @@
 * 第一步，页面引入kissy-1.3.0包；
 * 第二步，若本地调试需添加配置
 
-		```
 		var S = KISSY;
 	    S.Config.debug = true;
 	    if(S.Config.debug){
@@ -33,11 +32,9 @@
 	            ]
 	        });
 	    }
-		```
 
 * 第三步，调用并初始化组件
 	
-		```
 		S.use('gallery/powerTips/1.0/index,gallery/powerTips/1.0/index.css', function (S, PowerTips) {
 	         var powerTips = new PowerTips({
 	            triggers: ".J_PowerTips", //添加标签提示的钩子，支持kissy选择器
@@ -47,7 +44,6 @@
 	            spacing: 5 //标签显示位置与触发器之间的间隔，单位px
 	         });
 	    })
-		```
 
 ## changelog
 
